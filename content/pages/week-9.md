@@ -1,5 +1,7 @@
 ---
 content_type: page
+learning_resource_types: []
+ocw_type: CourseSection
 title: Week 9
 uid: 79b67382-5292-f6a0-b115-ef7aad0acfff
 ---

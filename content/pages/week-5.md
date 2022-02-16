@@ -1,5 +1,7 @@
 ---
 content_type: page
+learning_resource_types: []
+ocw_type: CourseSection
 title: Week 5
 uid: a4d71ca2-18aa-0275-e844-5a9cbf900105
 ---
@@ -28,7 +30,7 @@ Lecture 13: LU Factorization and Partial Pivoting
 
 ### Summary
 
-Review of Gaussian elimination. Reviewed the fact that this gives an A=LU factorization, and that we then solve Ax=b by solving Ly=b (doing the same steps to b that we did to A during elimination to get y) and then solving Ux=y (back substitution). Emphasized that you should almost never compute A\-1 explicitly. It is just as cheap to keep L and U around, since triangular solves are essentially the same cost as a matrix-vector multiplication. Computing A\-1 is usually a mistake: you can't do anything with A\-1 that you couldn't do with L and U, and you are wasting both computations and accuracy in computing A\-1. A\-1 is useful in abstract manipulations, but whenever you see "x=A\-1b" you should interpret it for computational purposes as solving Ax=b by LU or some other method.
+Review of Gaussian elimination. Reviewed the fact that this gives an A=LU factorization, and that we then solve Ax=b by solving Ly=b (doing the same steps to b that we did to A during elimination to get y) and then solving Ux=y (back substitution). Emphasized that you should almost never compute A{{< sup "\\-1" >}} explicitly. It is just as cheap to keep L and U around, since triangular solves are essentially the same cost as a matrix-vector multiplication. Computing A{{< sup "\\-1" >}} is usually a mistake: you can't do anything with A{{< sup "\\-1" >}} that you couldn't do with L and U, and you are wasting both computations and accuracy in computing A{{< sup "\\-1" >}}. A{{< sup "\\-1" >}} is useful in abstract manipulations, but whenever you see "x=A{{< sup "\\-1" >}}b" you should interpret it for computational purposes as solving Ax=b by LU or some other method.
 
 Introduced partial pivoting, and pointed out (omitting bookkeeping details) that this can be expressed as a PA=LU factorization where P is a permutation. Began to discuss backwards stability of LU, and mentioned example where U matrix grows exponentially fast with m to point out that the backwards stability result is practically useless here, and that the (indisputable) practicality of Gaussian elimination is more a result of the types of matrices that arise in practice.
 

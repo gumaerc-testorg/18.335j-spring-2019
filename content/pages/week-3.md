@@ -1,5 +1,7 @@
 ---
 content_type: page
+learning_resource_types: []
+ocw_type: CourseSection
 title: Week 3
 uid: f2a1f98a-ee29-8315-0738-08d44f781e38
 ---
@@ -24,7 +26,7 @@ Lecture 7: The SVD, its Applications, and Condition Numbers
 
 ### Summary
 
-This lecture is given by guest lecturer, Prof. Alan Edelman. In this lecture we discussed SVD, relationship to L2 norms and condition numbers, as well as applications (e.g. principal components analysis).
+This lecture is given by guest lecturer, Prof. Alan Edelman. In this lecture we discussed SVD, relationship to L{{< sub "2" >}} norms and condition numbers, as well as applications (e.g. principal components analysis).
 
 ### Further Reading
 

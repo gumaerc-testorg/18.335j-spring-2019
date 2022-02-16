@@ -1,5 +1,7 @@
 ---
 content_type: page
+learning_resource_types: []
+ocw_type: CourseSection
 title: Week 11
 uid: 29b83d59-c75d-f1e9-d0bc-358816146102
 ---
@@ -9,7 +11,7 @@ Lecture 29: Lagrange Dual Problems
 
 ### Summary
 
-Started by reviewing the basic idea of Lagrange multipliers to find an extremum of one function f0(x) and one equality constraint h1(x)=0. We instead find an extremum of L(x,ν1)=f0(x)+ν1h1(x) over x and the _Lagrange multiplier_ ν1. The ν1 partial derivative of L ensures h1(x)=0, in which case L=f0 and the remaining derivatives extremize f0 along the constraint surface. Noted that ∇L=0 then enforces ∇f0\=0 in the direction parallel to the constraint, whereas perpendicular to the constraint ν1 represents a "force" that prevents x from leaving the h1(x)=0 constraint surface.
+Started by reviewing the basic idea of Lagrange multipliers to find an extremum of one function f{{< sub "0" >}}(x) and one equality constraint h{{< sub "1" >}}(x)=0. We instead find an extremum of L(x,ν{{< sub "1" >}})=f{{< sub "0" >}}(x)+ν{{< sub "1" >}}h{{< sub "1" >}}(x) over x and the _Lagrange multiplier_ ν{{< sub "1" >}}. The ν{{< sub "1" >}} partial derivative of L ensures h{{< sub "1" >}}(x)=0, in which case L=f{{< sub "0" >}} and the remaining derivatives extremize f{{< sub "0" >}} along the constraint surface. Noted that ∇L=0 then enforces ∇f{{< sub "0" >}}\=0 in the direction parallel to the constraint, whereas perpendicular to the constraint ν{{< sub "1" >}} represents a "force" that prevents x from leaving the h{{< sub "1" >}}(x)=0 constraint surface.
 
 Generalized to the Lagrangian L(x,λ,ν) of the general optimization problem (the "primal" problem) with both inequality and equality constraints, following chapter 5 of the Boyd and Vandenberghe book (see below) (section 5.1.1).
 

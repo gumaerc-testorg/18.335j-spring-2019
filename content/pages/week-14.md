@@ -1,5 +1,7 @@
 ---
 content_type: page
+learning_resource_types: []
+ocw_type: CourseSection
 title: Week 14
 uid: 91f42844-de39-df8a-3812-24c45f7815b4
 ---

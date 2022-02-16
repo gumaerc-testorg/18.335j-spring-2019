@@ -1,5 +1,7 @@
 ---
 content_type: page
+learning_resource_types: []
+ocw_type: CourseSection
 title: Week 4
 uid: 0b66ee6d-f323-1973-fa0b-b51b7f5d56aa
 ---
@@ -13,7 +15,7 @@ Discussed solution of normal equations. Discussed condition number of solving no
 
 Introduced the alternative of QR factorization (finding an orthonormal basis for the column space of the matrix). Explained why, if we can do it accurately, this will give a good way to solve least-squares problems.
 
-Gave the simple, but unstable, construction of the Gram-Schmidt algorithm, to find a QR factorization. Analyzed its O(mn2) complexity (specifically, 2mn2 flops), and commented that the "same" projection qqᵀa requires O(m2) operations if you perform it as (qqT)a but O(m) operations if you perform it as q(qTa) — matrix operations are associative (but not commutative), but where you put the parentheses can make a big difference in performance!
+Gave the simple, but unstable, construction of the Gram-Schmidt algorithm, to find a QR factorization. Analyzed its O(mn{{< sup "2" >}}) complexity (specifically, 2mn{{< sup "2" >}} flops), and commented that the "same" projection qqᵀa requires O(m{{< sup "2" >}}) operations if you perform it as (qq{{< sup "T" >}})a but O(m) operations if you perform it as q(q{{< sup "T" >}}a) — matrix operations are associative (but not commutative), but where you put the parentheses can make a big difference in performance!
 
 Discussed loss of orthogonality in classical Gram-Schmidt, using a simple example, especially in the case where the matrix has nearly dependent columns to begin with.
 

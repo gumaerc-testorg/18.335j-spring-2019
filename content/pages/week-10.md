@@ -1,5 +1,7 @@
 ---
 content_type: page
+learning_resource_types: []
+ocw_type: CourseSection
 title: Week 10
 uid: 11a637d9-eeaf-6a4b-61b1-048f51780804
 ---
@@ -25,7 +27,7 @@ Went over a particular example of a nonlinear optimization scheme, solving the f
 
 Outlined the inner/outer iteration structure of CCSA, and the interesting property that it produces a sequence of feasible iterates from a feasible starting point, which means that you can stop it early and still have a feasible solution (which is very useful for many applications where 99% of optimal is fine, but feasibility is essential).
 
-The inner optimization problem involving the approximate gᵢ functions turns out to be _much_ easier to solve because it is _convex_ and _separable_ (gi = a sum of 1d convex functions of each coordinate xj). Convexity allows us to use the technique of duality to turn the problem into an equivalent "dual" optimization problem, and separability makes this dual problem trivial to formulate and solve. Began discussing the ideas of _Lagrangians_ and duality using the Boyd textbook; we will continue this in the next lecture.
+The inner optimization problem involving the approximate gᵢ functions turns out to be _much_ easier to solve because it is _convex_ and _separable_ (g{{< sub "i" >}} = a sum of 1d convex functions of each coordinate x{{< sub "j" >}}). Convexity allows us to use the technique of duality to turn the problem into an equivalent "dual" optimization problem, and separability makes this dual problem trivial to formulate and solve. Began discussing the ideas of _Lagrangians_ and duality using the Boyd textbook; we will continue this in the next lecture.
 
 ### Further Reading
 

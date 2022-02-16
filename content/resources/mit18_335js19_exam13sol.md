@@ -1,8 +1,12 @@
 ---
 content_type: resource
 description: ''
-file: /media/https%3A/open-learning-course-data-rc.s3.amazonaws.com/18-335j-introduction-to-numerical-methods-spring-2019/0395a77ed3f7402c2c0a1028f5419710_MIT18_335JS19_exam13sol.pdf
+file: /media/courses/18-335j-introduction-to-numerical-methods-spring-2019/0395a77ed3f7402c2c0a1028f5419710_MIT18_335JS19_exam13sol.pdf
 file_type: application/pdf
+learning_resource_types: []
+ocw_type: OCWFile
+parent_title: Week 9
+parent_type: CourseSection
 resourcetype: Document
 title: 18.335J midterm exam 2013 solutions
 uid: 0395a77e-d3f7-402c-2c0a-1028f5419710

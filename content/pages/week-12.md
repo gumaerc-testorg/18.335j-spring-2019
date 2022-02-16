@@ -1,5 +1,7 @@
 ---
 content_type: page
+learning_resource_types: []
+ocw_type: CourseSection
 title: Week 12
 uid: dd105dfc-a5c9-7a7d-ef21-71a11a6c112d
 ---
