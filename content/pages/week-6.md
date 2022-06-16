@@ -1,5 +1,6 @@
 ---
 content_type: page
+description: This section covers Lectures 15-17.
 learning_resource_types: []
 ocw_type: CourseSection
 title: Week 6
@@ -19,7 +20,7 @@ However, finding roots of the characteristic polynomial is generally a terrible 
 
 The key to making most of the eigensolver algorithms efficient is reducing A to Hessenberg form: A=QHQ\* where H is upper triangular plus one nonzero value below each diagonal. Unlike Schur form, Hessenberg factorization can be done exactly in a finite number \[Θ(m3)\] of steps (in exact arithmetic). H and A are similar: they have the same eigenvalues, and the eigenvector are related by Q. And once we reduce to Hessenberg form, all the subsequent operations we might want to do (determinants, LU or QR factorization, etcetera), will be fast. In the case of Hermitian A, showed that H is tridiagonal; in this case, most subsequent operations (even LU and QR factorization) will be Θ(m).
 
-*   Lecture 15 handout: [Hessenberg Factorization (PDF)]({{< baseurl >}}/resources/mit18_335js19_lec15)
+*   Lecture 15 handout: {{% resource_link fc0209db-e680-0297-2f36-f172077fb976 "Hessenberg Factorization (PDF)" %}}
 
 ### Further Reading
 
@@ -45,8 +46,8 @@ Discussed inverse iteration and shifted-inverse iteration. Discussed Rayleigh-qu
 ### Further Reading
 
 *   Read “Lectures 27–30” in the textbook _Numerical Linear Algebra_.
-*   [The QR Algorithm I (PDF)]({{< baseurl >}}/resources/mit18_335js19_lec16_reading) (Courtesy of Per-Olof Persson. Used with permission.)
-*   [The QR Algorithm II (PDF)]({{< baseurl >}}/resources/mit18_335js19_lec16_reading2) (Courtesy of Per-Olof Persson. Used with permission.)
+*   {{% resource_link f1ce20d2-c382-d611-27d8-948b42dd0c86 "The QR Algorithm I (PDF)" %}} (Courtesy of Per-Olof Persson. Used with permission.)
+*   {{% resource_link 26ed98a9-d8ea-1b69-ae3b-d2817a0bb1c1 "The QR Algorithm II (PDF)" %}} (Courtesy of Per-Olof Persson. Used with permission.)
 
 Lecture 17: Shifted QR and Rayleigh Quotients
 ---------------------------------------------
@@ -66,5 +67,5 @@ Emphasized that there are many iterative methods, and that there is no clear "wi
 ### Further Reading
 
 *   Read “Lectures 27–30” in the textbook _Numerical Linear Algebra_.
-*   [The QR Algorithm I (PDF)]({{< baseurl >}}/resources/mit18_335js19_lec16_reading) (Courtesy of Per-Olof Persson. Used with permission.)
-*   [The QR Algorithm II (PDF)]({{< baseurl >}}/resources/mit18_335js19_lec16_reading2) (Courtesy of Per-Olof Persson. Used with permission.)
+*   {{% resource_link f1ce20d2-c382-d611-27d8-948b42dd0c86 "The QR Algorithm I (PDF)" %}} (Courtesy of Per-Olof Persson. Used with permission.)
+*   {{% resource_link 26ed98a9-d8ea-1b69-ae3b-d2817a0bb1c1 "The QR Algorithm II (PDF)" %}} (Courtesy of Per-Olof Persson. Used with permission.)

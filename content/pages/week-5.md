@@ -1,5 +1,6 @@
 ---
 content_type: page
+description: This section covers Lectures 12-14.
 learning_resource_types: []
 ocw_type: CourseSection
 title: Week 5
@@ -15,14 +16,14 @@ Introduced the concept of optimal cache-oblivious algorithms. Discussed cache-ob
 
 Discussion of spatial locality and cache lines, with examples of dot products and matrix additions (both of which are "level 1 BLAS" operations with no temporal locality); you'll do more on this in Problem set 3.
 
-*   Lecture 12 handout: [Experiments with Cache-Oblivious Matrix Multiplication (PDF)]({{< baseurl >}}/resources/mit18_335js19_lec12)
+*   Lecture 12 handout: {{% resource_link 94f02a07-3e2e-6c15-27e2-4c71ba8741f4 "Experiments with Cache-Oblivious Matrix Multiplication (PDF)" %}}
 *   Lecture 12 notebook: [Experiments with Memory Access and Matrices](http://nbviewer.jupyter.org/github/mitmath/18335/blob/master/notes/Memory-and-Matrices.ipynb)
 
 ### Further Reading
 
 *   [Automatically Tuned Linear Algebra Software (ATLAS)](http://math-atlas.sourceforge.net/)
 *   [Cache-Oblivious Algorithms](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.34.7911) by Matteo Frigo, et al.
-*   [![This resource may not render correctly in a screen reader.](/images/inacessible.gif)Register Allocation in Kernel Generators (PDF)](http://cscads.rice.edu/workshops/july2007/autotune-slides-07/Frigo.pdf) by Matteo Frigo
+*   [Register Allocation in Kernel Generators (PDF)](http://cscads.rice.edu/workshops/july2007/autotune-slides-07/Frigo.pdf) by Matteo Frigo
 *   [Row- and column-major order](http://en.wikipedia.org/wiki/Row-major_order) on Wikipedia
 
 Lecture 13: LU Factorization and Partial Pivoting
@@ -30,7 +31,7 @@ Lecture 13: LU Factorization and Partial Pivoting
 
 ### Summary
 
-Review of Gaussian elimination. Reviewed the fact that this gives an A=LU factorization, and that we then solve Ax=b by solving Ly=b (doing the same steps to b that we did to A during elimination to get y) and then solving Ux=y (back substitution). Emphasized that you should almost never compute A{{< sup "\\-1" >}} explicitly. It is just as cheap to keep L and U around, since triangular solves are essentially the same cost as a matrix-vector multiplication. Computing A{{< sup "\\-1" >}} is usually a mistake: you can't do anything with A{{< sup "\\-1" >}} that you couldn't do with L and U, and you are wasting both computations and accuracy in computing A{{< sup "\\-1" >}}. A{{< sup "\\-1" >}} is useful in abstract manipulations, but whenever you see "x=A{{< sup "\\-1" >}}b" you should interpret it for computational purposes as solving Ax=b by LU or some other method.
+Review of Gaussian elimination. Reviewed the fact that this gives an A=LU factorization, and that we then solve Ax=b by solving Ly=b (doing the same steps to b that we did to A during elimination to get y) and then solving Ux=y (back substitution). Emphasized that you should almost never compute A{{< sup "\-1" >}} explicitly. It is just as cheap to keep L and U around, since triangular solves are essentially the same cost as a matrix-vector multiplication. Computing A{{< sup "\-1" >}} is usually a mistake: you can't do anything with A{{< sup "\-1" >}} that you couldn't do with L and U, and you are wasting both computations and accuracy in computing A{{< sup "\-1" >}}. A{{< sup "\-1" >}} is useful in abstract manipulations, but whenever you see "x=A{{< sup "\-1" >}}b" you should interpret it for computational purposes as solving Ax=b by LU or some other method.
 
 Introduced partial pivoting, and pointed out (omitting bookkeeping details) that this can be expressed as a PA=LU factorization where P is a permutation. Began to discuss backwards stability of LU, and mentioned example where U matrix grows exponentially fast with m to point out that the backwards stability result is practically useless here, and that the (indisputable) practicality of Gaussian elimination is more a result of the types of matrices that arise in practice.
 

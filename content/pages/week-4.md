@@ -1,5 +1,6 @@
 ---
 content_type: page
+description: This section covers Lectures 9-11.
 learning_resource_types: []
 ocw_type: CourseSection
 title: Week 4
@@ -22,7 +23,7 @@ Discussed loss of orthogonality in classical Gram-Schmidt, using a simple exampl
 ### Further Reading
 
 *   Read “Lectures 7, 8, 18, and 19” in the textbook _Numerical Linear Algebra_.
-*   [Gram-Schmidt Orthogonalization (PDF)]({{< baseurl >}}/resources/mit18_335js19_lec9_reading) (Courtesy of Per-Olof Persson. Used with permission.)
+*   {{% resource_link be0cdadd-9de5-6ff8-d20d-9a0c6d6d9206 "Gram-Schmidt Orthogonalization (PDF)" %}} (Courtesy of Per-Olof Persson. Used with permission.)
 *   [Gram-Schmidt process](https://en.wikipedia.org/wiki/Gram%E2%80%93Schmidt_process) on Wikipedia.
 
 Lecture 10: Modified Gram-Schmidt and Householder QR
@@ -36,7 +37,7 @@ Re-interpreted Gram-Schmidt in matrix form as Q = AR1R2..., i.e. as multiplying 
 
 Instead of multiplying A on the right by R's to get Q, however, we can instead multiply A on the left by Q's to get R. This leads us to the Householder QR algorithm. Introduced Householder QR, emphasized the inherent stability properties of multiplying by a sequence of unitary matrices (as shown in Problem set 2). Showed how we can convert a matrix to upper-triangular form (superficially similar to Gaussian elimination) via unitary Householder reflectors.
 
-*   Lecture 10 handout: [Householder Reflectors and Givens Rotations (PDF)]({{< baseurl >}}/resources/mit18_335js19_lec10) (Courtesy of Per-Olof Persson. Used with permission.)
+*   Lecture 10 handout: {{% resource_link 24dd28c5-8f71-fa98-f333-597707ff8684 "Householder Reflectors and Givens Rotations (PDF)" %}} (Courtesy of Per-Olof Persson. Used with permission.)
 *   Lecture 10 notebook: [Classical vs. Modified Gram-Schmidt](http://nbviewer.jupyter.org/github/mitmath/18335/blob/master/notes/Gram-Schmidt.ipynb)
 
 ### Further Reading
@@ -59,13 +60,13 @@ Analyzed cache complexity of simple row-column matrix multiply, showed that it a
 
 Discussed some practical difficulties of the blocked matrix multiplication: algorithm depends on cache-size Z, and multi-level memories require multi-level blocking. Discussed how these ideas are applied to the design of modern linear-algebra libraries (LAPACK) by building them out of block operations (performed by an optimized BLAS).
 
-*   Lecture 11 handout: [Performance Experiments with Matrix Multiplication (PDF)]({{< baseurl >}}/resources/mit18_335js19_lec11)
-*   [Ideal-Cache Terminology (PDF)]({{< baseurl >}}/resources/ideal-cache)
+*   Lecture 11 handout: {{% resource_link 90a515a9-caf1-cbbe-7065-48d90e659d5a "Performance Experiments with Matrix Multiplication (PDF)" %}}
+*   {{% resource_link 36335ea8-264f-bf78-790a-08b710fdf280 "Ideal-Cache Terminology (PDF)" %}}
 
 ### Assignment
 
-*   [Problem set 3 (PDF)]({{< baseurl >}}/resources/mit18_335js19_pset3)
-*   [Problem set 3 solutions (PDF)]({{< baseurl >}}/resources/mit18_335js19_pset3sol)
+*   {{% resource_link d7797a57-5cf3-9e9b-be5f-68b3595190a4 "Problem set 3 (PDF)" %}}
+*   {{% resource_link 2340346a-23cf-b535-2794-9b2b8c15f2f2 "Problem set 3 solutions (PDF)" %}}
 
 ### Further Reading
 

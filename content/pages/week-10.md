@@ -1,5 +1,6 @@
 ---
 content_type: page
+description: This section covers Lectures 27 and 28.
 learning_resource_types: []
 ocw_type: CourseSection
 title: Week 10
@@ -13,7 +14,7 @@ Lecture 27: Adjoint Methods for Eigenproblems and Recurrence Relations
 
 Discussed adjoint methods for eigenproblems and recurrence relations. A recurrence relation is an equation that recursively defines a sequence or multidimensional array of values, once one or more initial terms are given: each further term of the sequence or array is defined as a function of the preceding terms.
 
-*   Lecture 27 handout: [Adjoint Methods and Sensitivity Analysis for Recurrence Relations (PDF)]({{< baseurl >}}/resources/mit18_335js19_lec27)
+*   Lecture 27 handout: {{% resource_link c34c9784-410f-2cef-610f-73af72883427 "Adjoint Methods and Sensitivity Analysis for Recurrence Relations (PDF)" %}}
 *   Lecture 27 notebook: [Recurrence Relation](https://nbviewer.jupyter.org/github/mitmath/18335/blob/master/notes/adjoint/Adjoint-method.ipynb)
 
 Lecture 28: Trust-Regions Methods and the CCSA Algorithm
