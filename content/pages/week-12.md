@@ -1,5 +1,8 @@
 ---
 content_type: page
+description: This section covers Lectures 32-34.
+learning_resource_types: []
+ocw_type: CourseSection
 title: Week 12
 uid: dd105dfc-a5c9-7a7d-ef21-71a11a6c112d
 ---
@@ -34,8 +37,8 @@ New topic: numerical integration (numerical quadrature). Began by basic defini
 
 Showed numerical experiment (see handout) demonstrating that sometimes the trapezoidal rule can do much better than this: it can even have exponential convergence with the number of points! To understand this at a deeper level, I analyze the problem using Fourier cosine series (see handout), and show that the error in the trapezoidal rule is directly related to the convergence rate of the Fourier series. Claimed that this convergence rate is related to the smoothness of the periodic extension of the function, and in fact an analytic periodic function has Fourier coefficients that vanish exponentially fast, and thus the trapezoidal rule converges exponentially in that case. Proved by integration by parts of the Fourier series. In fact, we find that only the _odd_\-order derivatives at the endpoints need to be periodic to get accelerated convergence.
 
-*   Lecture 33 handout 1: ![This resource may not render correctly in a screen reader.](/images/inacessible.gif)[Numerical Integration and the Redemption of the Trapezoidal Rule (PDF)]({{< baseurl >}}/resources/mit18_335js19_lec33_1)
-*   Lecture 33 handout 2: ![This resource may not render correctly in a screen reader.](/images/inacessible.gif)[Fourier Cosine Series Examples (PDF)]({{< baseurl >}}/resources/mit18_335js19_lec33_2)
+*   Lecture 33 handout 1: {{% resource_link 4fc9cea2-8698-2357-dc8f-1a64a1b035cf "Numerical Integration and the Redemption of the Trapezoidal Rule (PDF)" %}}
+*   Lecture 33 handout 2: {{% resource_link 173a70c0-f967-6f91-66c0-baa9c2099750 "Fourier Cosine Series Examples (PDF)" %}}
 
 Lecture 34: Clenshaw-Curtis Quadrature
 --------------------------------------

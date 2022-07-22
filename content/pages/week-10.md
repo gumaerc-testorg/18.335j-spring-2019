@@ -1,5 +1,8 @@
 ---
 content_type: page
+description: This section covers Lectures 27 and 28.
+learning_resource_types: []
+ocw_type: CourseSection
 title: Week 10
 uid: 11a637d9-eeaf-6a4b-61b1-048f51780804
 ---
@@ -11,7 +14,7 @@ Lecture 27: Adjoint Methods for Eigenproblems and Recurrence Relations
 
 Discussed adjoint methods for eigenproblems and recurrence relations. A recurrence relation is an equation that recursively defines a sequence or multidimensional array of values, once one or more initial terms are given: each further term of the sequence or array is defined as a function of the preceding terms.
 
-*   Lecture 27 handout: [Adjoint Methods and Sensitivity Analysis for Recurrence Relations (PDF)]({{< baseurl >}}/resources/mit18_335js19_lec27)
+*   Lecture 27 handout: {{% resource_link c34c9784-410f-2cef-610f-73af72883427 "Adjoint Methods and Sensitivity Analysis for Recurrence Relations (PDF)" %}}
 *   Lecture 27 notebook: [Recurrence Relation](https://nbviewer.jupyter.org/github/mitmath/18335/blob/master/notes/adjoint/Adjoint-method.ipynb)
 
 Lecture 28: Trust-Regions Methods and the CCSA Algorithm
@@ -25,7 +28,7 @@ Went over a particular example of a nonlinear optimization scheme, solving the f
 
 Outlined the inner/outer iteration structure of CCSA, and the interesting property that it produces a sequence of feasible iterates from a feasible starting point, which means that you can stop it early and still have a feasible solution (which is very useful for many applications where 99% of optimal is fine, but feasibility is essential).
 
-The inner optimization problem involving the approximate gᵢ functions turns out to be _much_ easier to solve because it is _convex_ and _separable_ (gi = a sum of 1d convex functions of each coordinate xj). Convexity allows us to use the technique of duality to turn the problem into an equivalent "dual" optimization problem, and separability makes this dual problem trivial to formulate and solve. Began discussing the ideas of _Lagrangians_ and duality using the Boyd textbook; we will continue this in the next lecture.
+The inner optimization problem involving the approximate gᵢ functions turns out to be _much_ easier to solve because it is _convex_ and _separable_ (g{{< sub "i" >}} = a sum of 1d convex functions of each coordinate x{{< sub "j" >}}). Convexity allows us to use the technique of duality to turn the problem into an equivalent "dual" optimization problem, and separability makes this dual problem trivial to formulate and solve. Began discussing the ideas of _Lagrangians_ and duality using the Boyd textbook; we will continue this in the next lecture.
 
 ### Further Reading
 

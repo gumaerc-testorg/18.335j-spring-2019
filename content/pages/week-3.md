@@ -1,5 +1,8 @@
 ---
 content_type: page
+description: This section covers Lectures 6-8.
+learning_resource_types: []
+ocw_type: CourseSection
 title: Week 3
 uid: f2a1f98a-ee29-8315-0738-08d44f781e38
 ---
@@ -11,7 +14,7 @@ Lecture 6: Numerical Methods for Ordinary Differential Equations
 
 This lecture is given by MIT Applied Math Instructor, Dr. Christopher Rackauckas. In this lecture we will discuss the current state of software in differential equations and see how the continued advances in computer science and numerical methods are likely to impact our software in the near future. Issues such as efficiency improvements for stiff and non-stiff differential equations will be addressed from a numerical analysis standpoint but backed with recent benchmarking results. Newer mathematical topics like random ordinary differential equations, jump diffusion equations, and adaptivity for stochastic differential equations will be introduced and the successes and limitations in current automatic software solutions will be discussed. We will close with a discussion on how recent computational advancements have been influencing the software implementations, specifically showing the effects of generic typing over abstract algorithms and implicit parallelism.
 
-*   Lecture 6 handout: ![This resource may not render correctly in a screen reader.](/images/inacessible.gif)[Modern Differential Equations Solver Software: Where We Are and Where We're Headed (PDF - 2.4MB)]({{< baseurl >}}/resources/mit18_335js19_lec6) (Courtesy of Christopher Rackauckas. Used with permission.)
+*   Lecture 6 handout: {{% resource_link 469d460f-7480-0c8a-1135-946a64dee01f "Modern Differential Equations Solver Software: Where We Are and Where We're Headed (PDF - 2.4MB)" %}} (Courtesy of Christopher Rackauckas. Used with permission.)
 
 ### Further Reading
 
@@ -24,7 +27,7 @@ Lecture 7: The SVD, its Applications, and Condition Numbers
 
 ### Summary
 
-This lecture is given by guest lecturer, Prof. Alan Edelman. In this lecture we discussed SVD, relationship to L2 norms and condition numbers, as well as applications (e.g. principal components analysis).
+This lecture is given by guest lecturer, Prof. Alan Edelman. In this lecture we discussed SVD, relationship to L{{< sub "2" >}} norms and condition numbers, as well as applications (e.g. principal components analysis).
 
 ### Further Reading
 

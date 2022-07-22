@@ -1,5 +1,8 @@
 ---
 content_type: page
+description: This section covers Lectures 38 and 39.
+learning_resource_types: []
+ocw_type: CourseSection
 title: Week 14
 uid: 91f42844-de39-df8a-3812-24c45f7815b4
 ---
@@ -13,7 +16,7 @@ Introduced the [discrete Fourier transform (DFT)](https://en.wikipedia.org/wiki
 
 A [fast Fourier transform (FFT)](https://en.wikipedia.org/wiki/Fast_Fourier_transform) is an O(_N_ log _N_) algorithm to compute the discrete Fourier transform. There are many such algorithms, the most famous of which is the Cooley-Tukey algorithm (1965, though there were many precursors dating back to Gauss himself).
 
-*   Lecture 38 handout: ![This resource may not render correctly in a screen reader.](/images/inacessible.gif)[Fast Fourier Transform Algorithms (PDF)]({{< baseurl >}}/resources/mit18_335js19_lec38)
+*   Lecture 38 handout: {{% resource_link edf5b798-bef2-f1cf-e687-a6bfcd32a03a "Fast Fourier Transform Algorithms (PDF)" %}}
 
 Lecture 39: FFT Algorithms and FFTW
 -----------------------------------
@@ -22,4 +25,4 @@ Lecture 39: FFT Algorithms and FFTW
 
 Continued on fast Fourier transform (FFT). Talked about fast Fourier transform in the west (FFTW). The fast Fourier transform in the west is a software library for computing discrete Fourier transforms (DFTs) developed by Matteo Frigo and Steven G. Johnson at MIT. FFTW is known as the fastest free software implementation of the fast Fourier transform (FFT) (upheld by regular benchmarks). Like many other implementations, it can compute transforms of real and complex-valued arrays of arbitrary size and dimension in O(_N_ log _N_) time.
 
-*   Lecture 39 handout: [Fast Fourier Transform and Fast Fourier Transform in the West (PDF - 2.6MB)]({{< baseurl >}}/resources/mit18_335js19_lec39)
+*   Lecture 39 handout: {{% resource_link f4e0fe09-545f-cf1a-9fa8-928385fcf412 "Fast Fourier Transform and Fast Fourier Transform in the West (PDF - 2.6MB)" %}}
