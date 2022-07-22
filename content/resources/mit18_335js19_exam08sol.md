@@ -4,6 +4,7 @@ description: ''
 file: /courses/18-335j-introduction-to-numerical-methods-spring-2019/a3ff57be1aa30fddeed5830282ca74ca_MIT18_335JS19_exam08sol.pdf
 file_type: application/pdf
 learning_resource_types: []
+license: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ocw_type: OCWFile
 parent_title: Week 9
 parent_type: CourseSection
