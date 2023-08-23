@@ -17,7 +17,7 @@ Continued to discuss preconditioning: finding an M such that MA (left preconditi
 
 Derived the conjugate-gradient method, by explicitly requiring that the nsup step minimize over the whole Krylov subspace (the span of the previous search directions). This gives rise to an orthogonality ("conjugacy", orthogonality through A) condition on the search directions, and can be enforced with Gram-Schmidt on the gradient directions. Then we will show that a Lanczos-like miracle occurs: most of the Gram-Schmidt inner products are zero, and we only need to keep the previous search direction.
 
-- Lecture 21 notebook: [Large-Scale Linear Algebra: Dense Matrix Methods](https://nbviewer.jupyter.org/github/mitmath/18335/blob/master/notes/Dense-and-Sparse.ipynb)
+- Lecture 21 notebook: [Large-Scale Linear Algebra: Dense Matrix Methods](https://nbviewer.jupyter.org/github/mitmath/18335/blob/spring19/notes/Dense-and-Sparse.ipynb)
 
 ### Further Reading
 
@@ -44,7 +44,7 @@ Derived the preconditioned conjugate gradient method (showing how the apparent n
 
 As an alternative to GMRES for non-Hermitian problems, considered the biCG algorithm. Derived it as in the van der Vorst notes below: as PCG on the Hermitian-indefinite matrix B=\[0,A;A\*,0\] with the "preconditioner" \[0,I;I,0\] (in the unpreconditioned case). Because this is Hermitian, there is still a conjugacy condition and it is still a Krylov method. Because it is indefinite, we are finding a saddle point and not a minimum of a quadratic, and *breakdown* can occur if one of the denominators (e.g. d\*Bd) becomes zero. (This is the same as algorithm 39.1 in Trefethen, but derived very differently.) Because of this, you should almost never use the plain biCG algorithm. However, the biCG idea was the starting point for several "stabilized" refinements, culminating in biCGSTAB(L) that try to avoid breakdown by combining biCG with elements of GMRES. Another algorithm worth trying is the QMR algorithm.
 
-Concluded with some rules of thumb about which type of solvers to use: LAPACK for small matrices (\< 1000s×1000s), sparse-direct for intermediate-size sparse cases, and iterative methods for the largest problems or problems with a fast matrix⋅vector but no sparsity. One important point that we will discuss next time is that sparse-direct algorithms scale much better for sparse matrices that come from discretization of 2d PDEs than 3d PDEs. In general, some experimentation is required to find the best technique for a given problem, so software like MATLAB or the Petsc library is extremely helpful in providing a quick way to explore many algorithms.
+Concluded with some rules of thumb about which type of solvers to use: LAPACK for small matrices (\\\< 1000s×1000s), sparse-direct for intermediate-size sparse cases, and iterative methods for the largest problems or problems with a fast matrix⋅vector but no sparsity. One important point that we will discuss next time is that sparse-direct algorithms scale much better for sparse matrices that come from discretization of 2d PDEs than 3d PDEs. In general, some experimentation is required to find the best technique for a given problem, so software like MATLAB or the Petsc library is extremely helpful in providing a quick way to explore many algorithms.
 
 ### Further Reading
 

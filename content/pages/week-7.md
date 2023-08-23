@@ -38,7 +38,7 @@ A solution to the loss of orthogonality in Lanczos and the growing computational
 Explained why restarting properly is nontrivial for k>1: we need to restart in such a way that maintains the Arnoldi (or Lanczos) property AQ{{< sub "n" >}} = Q{{< sub "n" >}}H{{< sub "n" >}} + r{{< sub "n" >}}e{{< sub "n" >}}ᵀ where H{{< sub "n" >}} is upper-Hessenberg, r{{< sub "n" >}} is orthogonal to Q{{< sub "n" >}}, and e{{< sub "n" >}}ᵀ is only nonzero in the last column. In particular, showed that the "obvious" naive restarting algorithm using k Ritz vectors *almost* works, but messes up the e{{< sub "n" >}}ᵀ property. See the handout and notebook below.
 
 - Lecture 19 handout: {{% resource_link "fa98fed4-3acb-3e23-11f6-d9328ca31d04" "Why Restarting Arnoldi/Lanczos is not Trivial (PDF)" %}}
-- Lecture 19 notebook: [Experiments with Arnoldi Iterations](http://nbviewer.jupyter.org/github/mitmath/18335/blob/master/notes/Arnoldi.ipynb)
+- Lecture 19 notebook: [Experiments with Arnoldi Iterations](http://nbviewer.jupyter.org/github/mitmath/18335/blob/spring19/notes/Arnoldi.ipynb)
 
 ### Further Reading
 

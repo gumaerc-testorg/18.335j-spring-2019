@@ -1,14 +1,13 @@
 ---
 content_type: page
 description: This section covers Lectures 12-14.
+draft: false
 learning_resource_types: []
 ocw_type: CourseSection
 title: Week 5
 uid: a4d71ca2-18aa-0275-e844-5a9cbf900105
 ---
-
-Lecture 12: Cache-Oblivious Algorithms and Spatial Locality
------------------------------------------------------------
+## Lecture 12: Cache-Oblivious Algorithms and Spatial Locality
 
 ### Summary
 
@@ -16,18 +15,17 @@ Introduced the concept of optimal cache-oblivious algorithms. Discussed cache-ob
 
 Discussion of spatial locality and cache lines, with examples of dot products and matrix additions (both of which are "level 1 BLAS" operations with no temporal locality); you'll do more on this in Problem set 3.
 
-*   Lecture 12 handout: {{% resource_link 94f02a07-3e2e-6c15-27e2-4c71ba8741f4 "Experiments with Cache-Oblivious Matrix Multiplication (PDF)" %}}
-*   Lecture 12 notebook: [Experiments with Memory Access and Matrices](http://nbviewer.jupyter.org/github/mitmath/18335/blob/master/notes/Memory-and-Matrices.ipynb)
+- Lecture 12 handout: {{% resource_link "94f02a07-3e2e-6c15-27e2-4c71ba8741f4" "Experiments with Cache-Oblivious Matrix Multiplication (PDF)" %}}
+- Lecture 12 notebook: [Experiments with Memory Access and Matrices](http://nbviewer.jupyter.org/github/mitmath/18335/blob/spring19/notes/Memory-and-Matrices.ipynb)
 
 ### Further Reading
 
-*   [Automatically Tuned Linear Algebra Software (ATLAS)](http://math-atlas.sourceforge.net/)
-*   [Cache-Oblivious Algorithms](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.34.7911) by Matteo Frigo, et al.
-*   [Register Allocation in Kernel Generators (PDF)](http://cscads.rice.edu/workshops/july2007/autotune-slides-07/Frigo.pdf) by Matteo Frigo
-*   [Row- and column-major order](http://en.wikipedia.org/wiki/Row-major_order) on Wikipedia
+- [Automatically Tuned Linear Algebra Software (ATLAS)](http://math-atlas.sourceforge.net/)
+- [Cache-Oblivious Algorithms](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.34.7911) by Matteo Frigo, et al.
+- [Register Allocation in Kernel Generators (PDF)](http://cscads.rice.edu/workshops/july2007/autotune-slides-07/Frigo.pdf) by Matteo Frigo
+- [Row- and column-major order](http://en.wikipedia.org/wiki/Row-major_order) on Wikipedia
 
-Lecture 13: LU Factorization and Partial Pivoting
--------------------------------------------------
+## Lecture 13: LU Factorization and Partial Pivoting
 
 ### Summary
 
@@ -37,10 +35,9 @@ Introduced partial pivoting, and pointed out (omitting bookkeeping details) that
 
 ### Further Reading
 
-*   Read “Lectures 20–23” in the textbook _Numerical Linear Algebra_.
+- Read “Lectures 20–23” in the textbook *Numerical Linear Algebra*.
 
-Lecture 14: Cholesky Factorization and other Specialized Solvers. Eigenproblems and Schur Factorizations
---------------------------------------------------------------------------------------------------------
+## Lecture 14: Cholesky Factorization and other Specialized Solvers. Eigenproblems and Schur Factorizations
 
 ### Summary
 
@@ -52,5 +49,5 @@ Discussed diagonalization, defective matrices, and the generalization of the Sch
 
 ### Further Reading
 
-*   Read “Lectures 20–23” in the textbook _Numerical Linear Algebra_.
-*   See all of the special cases of LAPACK's [Linear Equations](http://www.netlib.org/lapack/lug/node38.html).
+- Read “Lectures 20–23” in the textbook *Numerical Linear Algebra*.
+- See all of the special cases of LAPACK's [Linear Equations](http://www.netlib.org/lapack/lug/node38.html).
