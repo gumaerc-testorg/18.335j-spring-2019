@@ -16,14 +16,14 @@ Brief overview of the huge field of numerical methods and outline of the small p
 As a starting example, we considered the convergence of Newton's method (as applied to square roots); see the handout and Julia notebook below.
 
 - Lecture 1 handout: {{% resource_link "0a734ecc-94b6-0a26-2134-88e68588bc8d" "Square Roots via Newton's Method (PDF)" %}}
-- Lecture 1 notebook: [Square Roots](http://nbviewer.jupyter.org/github/mitmath/18335/blob/master/notes/Newton-Square-Roots.ipynb)
+- Lecture 1 notebook: [Square Roots](http://nbviewer.jupyter.org/github/mitmath/18335/blob/spring19/notes/Newton-Square-Roots.ipynb)
 
 ### Assignment
 
 - {{% resource_link "6e673088-5b20-bd04-6cbd-e805d15a4835" "Problem set 1 (PDF)" %}}
-- Problem set 1 notebook: [Problem set 1](https://nbviewer.jupyter.org/github/mitmath/18335/blob/master/psets/pset1.ipynb)
+- Problem set 1 notebook: [Problem set 1](https://nbviewer.jupyter.org/github/mitmath/18335/blob/spring19/psets/pset1.ipynb)
 - {{% resource_link "e03746c6-51f0-a76f-651d-918a0aa0dd10" "Problem set 1 solutions (PDF)" %}}
-- Problem set 1 solutions notebook: [Problem set 1 solutions](http://nbviewer.jupyter.org/github/mitmath/18335/blob/master/psets/pset1sol.ipynb)
+- Problem set 1 solutions notebook: [Problem set 1 solutions](http://nbviewer.jupyter.org/github/mitmath/18335/blob/spring19/psets/pset1sol.ipynb)
 
 ### Further Reading
 
@@ -42,8 +42,8 @@ Went through some simple examples in Julia (see notebook below), illustrating ba
 
 Overview of floating-point representations, focusing on the IEEE 754 standard (see also handout from previous lecture). The key point is that the nearest floating-point number to *x*, denoted fl(*x*), has the property of *uniform relative precision* (for |*x*| and 1/|*x*| less than some *range*, ≈10308 for double precision) that |fl(*x*)−*x*| ≤ εmachine|*x*|, where εmachine is the relative "machine precision" (about 10−16 for double precision). There are also a few special values: ±Inf (e.g. for [overflow](https://en.wikipedia.org/wiki/Arithmetic_overflow)), [NaN](https://en.wikipedia.org/wiki/NaN), and ±0 (e.g. for [underflow](https://en.wikipedia.org/wiki/Arithmetic_underflow)).
 
-- Lecture 2 handout: {{% resource_link "2f313023-ae34-04bc-217a-81a31b227170" "(Courtesy of Per-Olof Persson. Used with permission.)" %}}
-- {{% resource_link "2f313023-ae34-04bc-217a-81a31b227170" "Lecture 2 notebook: " %}} [Floating-Point Arithmetic](http://nbviewer.jupyter.org/github/mitmath/18335/blob/master/notes/Floating-Point-Intro.ipynb)
+- Lecture 2 handout:
+- [Floating-Point Arithmetic](http://nbviewer.jupyter.org/github/mitmath/18335/blob/spring19/notes/Floating-Point-Intro.ipynb)
 - {{% resource_link "88129903-3165-275f-3b15-ae8b172e6de8" "Some Myths about Floating-Point Arithmetic (PDF)" %}}
 
 ### Further Reading
