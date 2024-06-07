@@ -2,6 +2,7 @@
 content_type: resource
 description: ''
 file: /courses/18-335j-introduction-to-numerical-methods-spring-2019/e03746c651f0a76f651d918a0aa0dd10_MIT18_335JS19_pset1sol.pdf
+file_size: 208458
 file_type: application/pdf
 learning_resource_types: []
 license: https://creativecommons.org/licenses/by-nc-sa/4.0/

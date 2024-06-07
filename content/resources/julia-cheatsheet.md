@@ -2,6 +2,7 @@
 content_type: resource
 description: ''
 file: /courses/18-335j-introduction-to-numerical-methods-spring-2019/fb66800c466efd524aa5d76ddf928bf5_Julia-cheatsheet.pdf
+file_size: 112151
 file_type: application/pdf
 learning_resource_types: []
 license: https://creativecommons.org/licenses/by-nc-sa/4.0/
