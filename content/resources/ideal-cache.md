@@ -2,6 +2,7 @@
 content_type: resource
 description: ''
 file: /courses/18-335j-introduction-to-numerical-methods-spring-2019/36335ea8264fbf78790a08b710fdf280_ideal-cache.pdf
+file_size: 111718
 file_type: application/pdf
 learning_resource_types: []
 license: https://creativecommons.org/licenses/by-nc-sa/4.0/

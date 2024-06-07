@@ -2,6 +2,7 @@
 content_type: resource
 description: ''
 file: /courses/18-335j-introduction-to-numerical-methods-spring-2019/57ae7fa17a583481f70f6f15bd527b2c_MIT18_335JS19_exam12sol.pdf
+file_size: 177778
 file_type: application/pdf
 learning_resource_types: []
 license: https://creativecommons.org/licenses/by-nc-sa/4.0/
