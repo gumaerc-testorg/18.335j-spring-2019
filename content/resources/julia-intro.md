@@ -1,7 +1,7 @@
 ---
 content_type: resource
 description: ''
-file: /courses/18-335j-introduction-to-numerical-methods-spring-2019/ff680e9dd9857804f64e6f3bf523f80e_Julia-intro.pdf
+file: /ol-ocw-studio-app/courses/18-335j-introduction-to-numerical-methods-spring-2019/ff680e9dd9857804f64e6f3bf523f80e_Julia-intro.pdf
 file_size: 996918
 file_type: application/pdf
 learning_resource_types: []
