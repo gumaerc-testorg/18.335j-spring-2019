@@ -1,7 +1,7 @@
 ---
 content_type: resource
 description: ''
-file: /courses/18-335j-introduction-to-numerical-methods-spring-2019/0b133489e35262fd38a4bb24a196ee0b_MIT18_335JS19_exam11sol.pdf
+file: /ol-ocw-studio-app/courses/18-335j-introduction-to-numerical-methods-spring-2019/0b133489e35262fd38a4bb24a196ee0b_MIT18_335JS19_exam11sol.pdf
 file_size: 189699
 file_type: application/pdf
 learning_resource_types: []
