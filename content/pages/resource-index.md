@@ -21,17 +21,17 @@ PROBLEM SETS/EXAM AND SOLUTIONS
 
 {{% resource_link "0a734ecc-94b6-0a26-2134-88e68588bc8d" "Square Roots via Newton's Method (PDF)" %}}
 
-[Square Roots](http://nbviewer.jupyter.org/github/mitmath/18335/blob/spring19/notes/Newton-Square-Roots.ipynb)
+{{% resource_link "bb8c23c1-e445-4efa-bcad-b12d14546cab" "Square Roots" %}}
 
 {{< tdclose >}}{{< tdopen >}}
 
 {{% resource_link "6e673088-5b20-bd04-6cbd-e805d15a4835" "Problem Set 1 (PDF)" %}}
 
-[Problem set 1 notebook](https://nbviewer.jupyter.org/github/mitmath/18335/blob/spring19/psets/pset1.ipynb)
+{{% resource_link "6ef8b983-dd83-43a6-a965-b1ba2038d987" "Problem set 1 notebook" %}}
 
 {{% resource_link "e03746c6-51f0-a76f-651d-918a0aa0dd10" "Solutions to Problem Set 1 (PDF)" %}}
 
-[Solutions to Problem Set 1 notebook](https://nbviewer.jupyter.org/github/mitmath/18335/blob/spring19/psets/pset1sol.ipynb)
+{{% resource_link "a279aa16-94b8-4ea2-bd9c-71bc827e64c9" "Solutions to Problem Set 1 notebook" %}}
 
 {{< tdclose >}}{{< trclose >}}{{< tropen >}}{{< tdopen >}}
 {{% resource_link "6950d4a0-73bc-0d04-aa63-962ae31c42a2" "Lecture 2: Floating-Point Arithmetic" "#lec2" %}}
@@ -39,7 +39,7 @@ PROBLEM SETS/EXAM AND SOLUTIONS
 
 {{% resource_link "2f313023-ae34-04bc-217a-81a31b227170" "Floating-Point Arithmetic, the IEEE Standard (PDF)" %}} (Courtesy of Per-Olof Persson. Used with permission.)
 
-[Floating-Point Arithmetic](http://nbviewer.jupyter.org/github/mitmath/18335/blob/spring19/notes/Floating-Point-Intro.ipynb)
+{{% resource_link "76b99473-7db1-4d72-b6e5-58f063c9e78c" "Floating-Point Arithmetic" %}}
 
 {{% resource_link "88129903-3165-275f-3b15-ae8b172e6de8" "Some Myths about Floating-Point Arithmetic (PDF)" %}}
 
@@ -47,7 +47,7 @@ PROBLEM SETS/EXAM AND SOLUTIONS
 
 {{% resource_link "ff680e9d-d985-7804-f64e-6f3bf523f80e" "Introduction to Julia (PDF)" %}}
 
-[Julia for Numerical Computation in MIT Courses](https://github.com/mitmath/julia-mit/blob/master/README.md)
+{{% resource_link "e6fc46e4-e11c-4bb2-adac-7c554a15d07b" "Julia for Numerical Computation in MIT Courses" %}}
 
 {{< tdclose >}}{{< tdopen >}}
 \[No problem set\]
@@ -92,7 +92,7 @@ PROBLEM SETS/EXAM AND SOLUTIONS
 {{< tdclose >}}{{< trclose >}}{{< tropen >}}{{< tdopen >}}
 {{% resource_link "f2a1f98a-ee29-8315-0738-08d44f781e38" "Lecture 8: Linear Regression and the Generalized SVD" "#lec8" %}}
 {{< tdclose >}}{{< tdopen >}}
-[Many Viewpoints on Linear Regression](https://github.com/alanedelman/18.337_2017/blob/master/lectures/Lecture04_0918%20RegressionManyWays/RegressionManyWays.ipynb)
+{{% resource_link "f8698ad7-d2c5-42fd-a6ef-5ac5c0f06ede" "Many Viewpoints on Linear Regression" %}}
 {{< tdclose >}}{{< tdopen >}}
 \[No problem set\]
 {{< tdclose >}}{{< trclose >}}{{< tropen >}}{{< tdopen >}}
@@ -107,7 +107,7 @@ PROBLEM SETS/EXAM AND SOLUTIONS
 
 {{% resource_link "24dd28c5-8f71-fa98-f333-597707ff8684" "Householder Reflectors and Givens Rotations (PDF)" %}} (Courtesy of Per-Olof Persson. Used with permission.)
 
-[Classical vs. Modified Gram-Schmidt](http://nbviewer.jupyter.org/github/mitmath/18335/blob/spring19/notes/Gram-Schmidt.ipynb)
+{{% resource_link "380285e6-7be5-4de2-a65f-58297495b303" "Classical vs. Modified Gram-Schmidt" %}}
 
 {{< tdclose >}}{{< tdopen >}}
 \[No problem set\]
@@ -131,7 +131,7 @@ PROBLEM SETS/EXAM AND SOLUTIONS
 
 {{% resource_link "94f02a07-3e2e-6c15-27e2-4c71ba8741f4" "Experiments with Cache-Oblivious Matrix Multiplication (PDF)" %}}
 
-[Experiments with Memory Access and Matrices](http://nbviewer.jupyter.org/github/mitmath/18335/blob/spring19/notes/Memory-and-Matrices.ipynb)
+{{% resource_link "e9941dde-dd4b-4975-a271-1a93f62789e9" "Experiments with Memory Access and Matrices" %}}
 
 {{< tdclose >}}{{< tdopen >}}
 \[No problem set\]
@@ -177,7 +177,7 @@ PROBLEM SETS/EXAM AND SOLUTIONS
 
 {{% resource_link "fa98fed4-3acb-3e23-11f6-d9328ca31d04" "Why Restarting Arnoldi/Lanczos is not Trivial (PDF)" %}}
 
-[Experiments with Arnoldi Iterations](http://nbviewer.jupyter.org/github/mitmath/18335/blob/spring19/notes/Arnoldi.ipynb)
+{{% resource_link "68b69830-6622-46c6-8a14-10f7b1828c7d" "Experiments with Arnoldi Iterations" %}}
 
 {{< tdclose >}}{{< tdopen >}}
 \[No problem set\]
@@ -194,7 +194,7 @@ PROBLEM SETS/EXAM AND SOLUTIONS
 {{< tdclose >}}{{< trclose >}}{{< tropen >}}{{< tdopen >}}
 {{% resource_link "b1ca5a43-353d-d5e4-5a41-cddf22a430cf" "Lecture 21: Preconditioning Techniques. The Conjugate-Gradient Method" %}}
 {{< tdclose >}}{{< tdopen >}}
-[Large-Scale Linear Algebra: Dense Matrix Methods](https://nbviewer.jupyter.org/github/mitmath/18335/blob/spring19/notes/Dense-and-Sparse.ipynb)
+{{% resource_link "31070a39-45a1-4960-8e03-cc9cc3271b7c" "Large-Scale Linear Algebra: Dense Matrix Methods" %}}
 {{< tdclose >}}{{< tdopen >}}
 \[No problem set\]
 {{< tdclose >}}{{< trclose >}}{{< tropen >}}{{< tdopen >}}
@@ -215,7 +215,7 @@ PROBLEM SETS/EXAM AND SOLUTIONS
 
 {{% resource_link "bcd746dc-a8cb-f0d5-a890-f01a72d8ef64" "Sparse Matrix Algorithms (PDF)" %}} (Courtesy of Per-Olof Persson. Used with permission.)
 
-[Sparse-Direct Solvers in Julia](http://nbviewer.jupyter.org/github/mitmath/18335/blob/spring19/notes/Nested-Dissection.ipynb)
+{{% resource_link "5ba85af4-a43f-4abf-96a1-426fc4cd46d9" "Sparse-Direct Solvers in Julia" %}}
 
 {{< tdclose >}}{{< tdopen >}}
 \[No problem set\]
@@ -243,7 +243,7 @@ PROBLEM SETS/EXAM AND SOLUTIONS
 
 {{% resource_link "c34c9784-410f-2cef-610f-73af72883427" "Adjoint Methods and Sensitivity Analysis for Recurrence Relations (PDF)" %}}
 
-[Recurrence Relation](https://nbviewer.jupyter.org/github/mitmath/18335/blob/spring19/notes/adjoint/Adjoint-method.ipynb)
+{{% resource_link "c35e4bb1-f731-4a66-9244-6089923d46b0" "Recurrence Relation" %}}
 
 {{< tdclose >}}{{< tdopen >}}
 \[No problem set\]
@@ -256,7 +256,7 @@ PROBLEM SETS/EXAM AND SOLUTIONS
 {{< tdclose >}}{{< trclose >}}{{< tropen >}}{{< tdopen >}}
 {{% resource_link "29b83d59-c75d-f1e9-d0bc-358816146102" "Lecture 29: Lagrange Dual Problems" %}}
 {{< tdclose >}}{{< tdopen >}}
-[Lagrangian, Lagrange Dual Function and Dual Problem](https://github.com/mitmath/18335/blob/spring19/notes/boyd-ch5-slides.pdf)
+{{% resource_link "8c5b33a7-3a74-4574-a5a8-eb5b7040c747" "Lagrangian, Lagrange Dual Function and Dual Problem" %}}
 {{< tdclose >}}{{< tdopen >}}
 \[No problem set\]
 {{< tdclose >}}{{< trclose >}}{{< tropen >}}{{< tdopen >}}
