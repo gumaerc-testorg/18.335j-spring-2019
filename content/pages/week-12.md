@@ -25,8 +25,8 @@ Briefly discussed global optimization (GO). For general objectives, there are no
 ### Further Reading
 
 *   Conn, Andrew R. et al. _Introduction to Derivative-Free Optimization_. SIAM: Society for Industrial and Applied Mathematics, 2009. ISBN: 9780898716689.
-*   See also [NLopt Algorithms](https://nlopt.readthedocs.io/en/latest/NLopt_Algorithms/) and the references thereof.
-*   Several more stochastic algorithms in Julia are implemented in the [BlackBoxOptim](https://github.com/robertfeldt/BlackBoxOptim.jl) package.
+*   See also {{% resource_link "77d1bffc-f105-4908-9a30-bb096c6ce49f" "NLopt Algorithms" %}} and the references thereof.
+*   Several more stochastic algorithms in Julia are implemented in the {{% resource_link "852a01dd-a405-4e84-a895-161b408ff654" "BlackBoxOptim" %}} package.
 
 Lecture 33: Numerical Integration and the Convergence of the Trapezoidal Rule
 -----------------------------------------------------------------------------
@@ -53,5 +53,5 @@ Discussed the importance of nested quadrature rules for _a posteriori_ error e
 
 ### Further Reading
 
-*   Trefethen, Lloyd N. [Is Gauss Quadrature Better Than Clenshaw-Curtis?](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.157.4174), _SIAM Review_ 50 (1), 67–87 (2008).
-*   Gonnet, Pedro. [A Review of Error Estimation in Adaptive Quadrature](http://dl.acm.org/citation.cfm?id=2333117), _ACM Computing Surveys_ 44, article 22 (2012).
+*   Trefethen, Lloyd N. {{% resource_link "bc50003d-74b7-4429-8c3f-deb6fab7e1d1" "Is Gauss Quadrature Better Than Clenshaw-Curtis?" %}}, _SIAM Review_ 50 (1), 67–87 (2008).
+*   Gonnet, Pedro. {{% resource_link "bffbe720-edc5-47b5-af1c-fcdadc6915f1" "A Review of Error Estimation in Adaptive Quadrature" %}}, _ACM Computing Surveys_ 44, article 22 (2012).

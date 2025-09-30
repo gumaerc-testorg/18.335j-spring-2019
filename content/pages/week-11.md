@@ -17,12 +17,12 @@ Generalized to the Lagrangian L(x,λ,ν) of the general optimization problem (th
 
 Described the KKT conditions for a (local) optimum/extremum (Boyd, section 5.5.3). These are true in problems with strong duality, as pointed out by Boyd, but they are actually true in much more general conditions. For example, they hold under the "LICQ" condition in which the gradients of all the active constraints are linearly independents. Gave a simple graphical example to illustrate why violating LICQ requires a fairly weird optimum, at a cusp of two constraints.
 
-Lecture 29 handout: [Lagrangian, Lagrange Dual Function and Dual Problem (PDF)](https://github.com/mitmath/18335/blob/spring19/notes/boyd-ch5-slides.pdf) in the online book [*Convex Optimization*](http://www.stanford.edu/~boyd/cvxbook/) by Stephen Boyd and Lieven Vandenberghe.
+Lecture 29 handout: {{% resource_link "8c5b33a7-3a74-4574-a5a8-eb5b7040c747" "Lagrangian, Lagrange Dual Function and Dual Problem (PDF)" %}} in the online book {{% resource_link "3d7295a4-be41-48b0-81ab-ec30d3020cbf" "*Convex Optimization*" %}} by Stephen Boyd and Lieven Vandenberghe.
 
 ### Further Reading
 
-- Chapter 5 in the online book [*Convex Optimization*](http://www.stanford.edu/~boyd/cvxbook/) by Stephen Boyd and Lieven Vandenberghe.
-- There are many sources on [Lagrange multipliers](http://en.wikipedia.org/wiki/Lagrange_multipliers) (the special case of equality constraints) online that can be found by googling.
+- Chapter 5 in the online book {{% resource_link "3d7295a4-be41-48b0-81ab-ec30d3020cbf" "*Convex Optimization*" %}} by Stephen Boyd and Lieven Vandenberghe.
+- There are many sources on {{% resource_link "bff472b3-94a2-445e-8988-a89c6bc5a439" "Lagrange multipliers" %}} (the special case of equality constraints) online that can be found by googling.
 
 ## Lecture 30: Quasi-Newton Methods and the BFGS Algorithm; Lecture 31: Derivation of the BFGS Update
 
@@ -34,7 +34,7 @@ Began discussing quasi-Newton methods in general, and the Broyden–Fletcher–G
 
 ### Further Reading
 
-- [Quasi-Newton method](http://en.wikipedia.org/wiki/Quasi-Newton_methods) on Wikipedia
-- [Broyden-Fletcher-Goldfarb-Shanno algorithm](http://en.wikipedia.org/wiki/BFGS_method) on Wikipedia
-- [A New Derivation of Symmetric Positive Definite Secant Updates (PDF - 1.4MB)](https://www.sciencedirect.com/science/article/pii/B9780124686625500124) by J.E. Dennis, Jr and Robert B. Schnabel.
-- [The Linear Algebra of Block Quasi-Newton Algorithms (PDF)](http://www.cs.umd.edu/~oleary/reprints/j39.pdf) by Dianne P. O'Leary and A. Yeremin.
+- {{% resource_link "adee8816-6be2-43a9-8fd1-8526ade2474d" "Quasi-Newton method" %}} on Wikipedia
+- {{% resource_link "9ca73291-bd11-4287-b41c-1e8e93d86247" "Broyden-Fletcher-Goldfarb-Shanno algorithm" %}} on Wikipedia
+- {{% resource_link "ee45ea96-2b47-4feb-b07a-fdb5c7fc5313" "A New Derivation of Symmetric Positive Definite Secant Updates (PDF - 1.4MB)" %}} by J.E. Dennis, Jr and Robert B. Schnabel.
+- {{% resource_link "f723d43b-161f-421b-83c2-6582bab9e58c" "The Linear Algebra of Block Quasi-Newton Algorithms (PDF)" %}} by Dianne P. O'Leary and A. Yeremin.

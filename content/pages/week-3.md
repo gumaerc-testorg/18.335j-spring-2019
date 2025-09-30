@@ -17,9 +17,9 @@ This lecture is given by MIT Applied Math Instructor, Dr. Christopher Rackauckas
 
 ### Further Reading
 
-- [A Comparison Between Differential Equation Solver Suites In MATLAB, R, Julia, Python, C, Mathematica, Maple, and Fortran](http://www.stochasticlifestyle.com/comparison-differential-equation-solver-suites-matlab-r-julia-python-c-fortran/) by Christopher Rackauckas.
-- [Differential Equations package](https://github.com/JuliaDiffEq/DifferentialEquations.jl) for Julia by Christopher Rackauckas.
-- Video of [Intro to Solving Differential Equations in Julia](http://www.stochasticlifestyle.com/intro-solving-differential-equations-julia/) by Christopher Rackauckas.
+- {{% resource_link "865ca7bf-50e5-4cc3-b121-94ec3f15ca21" "A Comparison Between Differential Equation Solver Suites In MATLAB, R, Julia, Python, C, Mathematica, Maple, and Fortran" %}} by Christopher Rackauckas.
+- {{% resource_link "ca9d810e-9d29-4e7f-a706-22f6e862a640" "Differential Equations package" %}} for Julia by Christopher Rackauckas.
+- Video of {{% resource_link "e7321d58-ebd7-4476-83c7-2f6060270ee2" "Intro to Solving Differential Equations in Julia" %}} by Christopher Rackauckas.
 
 ## Lecture 7: The SVD, its Applications, and Condition Numbers
 
@@ -37,9 +37,9 @@ This lecture is given by guest lecturer, Prof. Alan Edelman. In this lecture we 
 
 This lecture is given by guest lecturer, Prof. Alan Edelman. In this lecture we discussed generalized SVD (GSVD), least-square problems (via QR or SVD) and different viewpoints on linear regression: linear algebra, optimization, statistics, and machine learning.
 
-- Lecture 8 notebook: [Many Viewpoints on Linear Regression](https://github.com/alanedelman/18.337_2017/blob/master/lectures/Lecture04_0918%20RegressionManyWays/RegressionManyWays.ipynb)
+- Lecture 8 notebook: {{% resource_link "f8698ad7-d2c5-42fd-a6ef-5ac5c0f06ede" "Many Viewpoints on Linear Regression" %}}
 
 ### Further Reading
 
 - Read “Lectures 7 and 11” in the textbook *Numerical Linear Algebra*.
-- [The GSVD: Where are the Ellipses?, Matrix Trigonometry, and more](https://arxiv.org/abs/1901.00485) by Alan Edelman and Yuyang Wang.
+- {{% resource_link "1905131a-7f33-4381-8174-78c739f88756" "The GSVD: Where are the Ellipses?, Matrix Trigonometry, and more" %}} by Alan Edelman and Yuyang Wang.

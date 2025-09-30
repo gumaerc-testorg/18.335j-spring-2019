@@ -23,7 +23,7 @@ Discussed loss of orthogonality in classical Gram-Schmidt, using a simple exampl
 
 - Read “Lectures 7, 8, 18, and 19” in the textbook *Numerical Linear Algebra*.
 - {{% resource_link "be0cdadd-9de5-6ff8-d20d-9a0c6d6d9206" "Gram-Schmidt Orthogonalization (PDF)" %}} (Courtesy of Per-Olof Persson. Used with permission.)
-- [Gram-Schmidt process](https://en.wikipedia.org/wiki/Gram%E2%80%93Schmidt_process) on Wikipedia.
+- {{% resource_link "f0ebf3da-c447-49c0-8d48-4c173edec207" "Gram-Schmidt process" %}} on Wikipedia.
 
 ## Lecture 10: Modified Gram-Schmidt and Householder QR
 
@@ -36,12 +36,12 @@ Re-interpreted Gram-Schmidt in matrix form as Q = AR1R2…, i.e. as multiplying 
 Instead of multiplying A on the right by R's to get Q, however, we can instead multiply A on the left by Q's to get R. This leads us to the Householder QR algorithm. Introduced Householder QR, emphasized the inherent stability properties of multiplying by a sequence of unitary matrices (as shown in Problem set 2). Showed how we can convert a matrix to upper-triangular form (superficially similar to Gaussian elimination) via unitary Householder reflectors.
 
 - Lecture 10 handout: {{% resource_link "24dd28c5-8f71-fa98-f333-597707ff8684" "Householder Reflectors and Givens Rotations (PDF)" %}} (Courtesy of Per-Olof Persson. Used with permission.)
-- Lecture 10 notebook: [Classical vs. Modified Gram-Schmidt](http://nbviewer.jupyter.org/github/mitmath/18335/blob/spring19/notes/Gram-Schmidt.ipynb)
+- Lecture 10 notebook: {{% resource_link "380285e6-7be5-4de2-a65f-58297495b303" "Classical vs. Modified Gram-Schmidt" %}}
 
 ### Further Reading
 
 - Read “Lectures 7, 8, 16, 18, and 19” in the textbook *Numerical Linear Algebra*. It turns out that modified GS is backwards stable in the sense that the product QR is close to A, i.e. the function f(A) = Q\*R is backwards stable in MGS; this is why solving systems with Q, R (appropriately used as discussed in Trefethen Lecture 19) is an accurate approximation to solving them with A.
-- For a review of the literature on backwards-stability proofs of MGS, see Paige, Christopher C., Miroslav Rozlozník, and Zdenvek Strakos "[Modified Gram-Schmidt (MGS), Least Squares, and Backward Stability of MGS-GMRES](https://epubs.siam.org/doi/10.1137/050630416)." *SIAM J. Matrix Anal. Appl.* 28, pp. 264–284.
+- For a review of the literature on backwards-stability proofs of MGS, see Paige, Christopher C., Miroslav Rozlozník, and Zdenvek Strakos "{{% resource_link "0a7df889-4e82-493d-b996-1220e8744be5" "Modified Gram-Schmidt (MGS), Least Squares, and Backward Stability of MGS-GMRES" %}}." *SIAM J. Matrix Anal. Appl.* 28, pp. 264–284.
 
 ## Lecture 11: Matrix Operations, Caches, and Blocking
 
@@ -67,8 +67,8 @@ Discussed some practical difficulties of the blocked matrix multiplication: algo
 
 ### Further Reading
 
-- Wikipedia has a reasonable introduction to "[Locality of Reference](http://en.wikipedia.org/wiki/Locality_of_reference)" that you might find useful.
-- The optimized matrix multiplication shown on the handouts is called "[Automatically Tuned Linear Algebra Software (ATLAS)](http://math-atlas.sourceforge.net/)."
-- "[Cache-Oblivious Algorithms](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.34.7911)" describes ideal cache model and analysis for various algorithms.
-- "[MATLAB Incorporates LAPACK](https://www.mathworks.com/company/newsletters/articles/matlab-incorporates-lapack.html)" is about the switch from LINPACK to LAPACK/BLAS in MATLAB.
+- Wikipedia has a reasonable introduction to "{{% resource_link "56effb3f-245c-48c6-b008-84ffd5ace9ae" "Locality of Reference" %}}" that you might find useful.
+- The optimized matrix multiplication shown on the handouts is called "{{% resource_link "b37f1d7d-6f25-4a65-8574-8e26210b3ad4" "Automatically Tuned Linear Algebra Software (ATLAS)" %}}."
+- "{{% resource_link "875b6646-cee2-4ea1-acb4-52fb4dc65dbb" "Cache-Oblivious Algorithms" %}}" describes ideal cache model and analysis for various algorithms.
+- "{{% resource_link "bf639030-3126-4aab-8edc-66121b7db88f" "MATLAB Incorporates LAPACK" %}}" is about the switch from LINPACK to LAPACK/BLAS in MATLAB.
 - The lecture video "[Cache-Efficient Algorithms](/courses/6-172-performance-engineering-of-software-systems-fall-2018/pages/lecture-videos/lecture-14-caching-and-cache-efficient-algorithms)" in [*6.172 Performance Engineering of Software Systems*](/courses/6-172-performance-engineering-of-software-systems-fall-2018) include discussions of matrix multiplication.
