@@ -17,16 +17,16 @@ Continued to discuss preconditioning: finding an M such that MA (left preconditi
 
 Derived the conjugate-gradient method, by explicitly requiring that the nsup step minimize over the whole Krylov subspace (the span of the previous search directions). This gives rise to an orthogonality ("conjugacy", orthogonality through A) condition on the search directions, and can be enforced with Gram-Schmidt on the gradient directions. Then we will show that a Lanczos-like miracle occurs: most of the Gram-Schmidt inner products are zero, and we only need to keep the previous search direction.
 
-- Lecture 21 notebook: [Large-Scale Linear Algebra: Dense Matrix Methods](https://nbviewer.jupyter.org/github/mitmath/18335/blob/spring19/notes/Dense-and-Sparse.ipynb)
+- Lecture 21 notebook: {{% resource_link "31070a39-45a1-4960-8e03-cc9cc3271b7c" "Large-Scale Linear Algebra: Dense Matrix Methods" %}}
 
 ### Further Reading
 
-- Chapter on [Preconditioners](http://www.netlib.org/linalg/html_templates/node51.html) in [*Templates for the Solution of Linear Systems: Building Blocks for Iterative Methods*](http://www.netlib.org/linalg/html_templates/Templates.html) by Richard Barrett et al.
+- Chapter on {{% resource_link "16b2ad08-fd8d-4a4d-af4e-3193a06eca71" "Preconditioners" %}} in {{% resource_link "24f3fa34-5ecc-429c-b428-29b72ec9bdc8" "*Templates for the Solution of Linear Systems: Building Blocks for Iterative Methods*" %}} by Richard Barrett et al.
 - Chen, Ke. *Matrix Preconditioning Techniques and Applications*. Cambridge University Press, 2005. ISBN: 9780521838283.
-- On MINRES and SYMMLQ: [Differences in the Effects of Rounding Errors in Krylov Solvers for Symmetric Indefinite Linear Systems](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.31.3064) by Gerard L.G. Sleijpen et al.
-- Online book [*Templates for the Solution of Algebraic Eigenvalue Problems: A Practical Guide*](http://www.cs.utk.edu/~dongarra/etemplates/book.html) by Zhaojun Bai et al.
+- On MINRES and SYMMLQ: {{% resource_link "a98b999c-4d6b-4061-813d-844b68d07525" "Differences in the Effects of Rounding Errors in Krylov Solvers for Symmetric Indefinite Linear Systems" %}} by Gerard L.G. Sleijpen et al.
+- Online book {{% resource_link "bc3f8310-a0b5-47a0-a38c-256443e98102" "*Templates for the Solution of Algebraic Eigenvalue Problems: A Practical Guide*" %}} by Zhaojun Bai et al.
 - Read “Lecture 38” in the textbook *Numerical Linear Algebra*.
-- [An Introduction to the Conjugate Gradient Method without the Agonizing Pain (PDF)](http://www.cs.cmu.edu/~quake-papers/painless-conjugate-gradient.pdf) by Jonathan Richard Shewchuk.
+- {{% resource_link "062234e8-f86a-4a46-b620-249720cbd0c0" "An Introduction to the Conjugate Gradient Method without the Agonizing Pain (PDF)" %}} by Jonathan Richard Shewchuk.
 
 ## Lecture 22: Convergence of Conjugate Gradient
 
@@ -48,6 +48,6 @@ Concluded with some rules of thumb about which type of solvers to use: LAPACK fo
 
 ### Further Reading
 
-Online book [*Templates for the Solution of Linear Systems: Building Blocks for Iterative Methods*](http://www.netlib.org/linalg/html_templates/Templates.html) by Richard Barrett et al.
+Online book {{% resource_link "24f3fa34-5ecc-429c-b428-29b72ec9bdc8" "*Templates for the Solution of Linear Systems: Building Blocks for Iterative Methods*" %}} by Richard Barrett et al.
 
-A very nice overview of iterative methods for non-Hermitian problems can be found in these [Lecture Notes on Iterative Methods](http://www.math.uu.nl/people/vorst/lecture.html) by Henk van der Vorst (second section, starting with GMRES).
+A very nice overview of iterative methods for non-Hermitian problems can be found in these {{% resource_link "fb531112-9c0d-4366-ae2f-0a037d8f1583" "Lecture Notes on Iterative Methods" %}} by Henk van der Vorst (second section, starting with GMRES).

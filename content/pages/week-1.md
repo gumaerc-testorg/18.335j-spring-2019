@@ -16,19 +16,19 @@ Brief overview of the huge field of numerical methods and outline of the small p
 As a starting example, we considered the convergence of Newton's method (as applied to square roots); see the handout and Julia notebook below.
 
 - Lecture 1 handout: {{% resource_link "0a734ecc-94b6-0a26-2134-88e68588bc8d" "Square Roots via Newton's Method (PDF)" %}}
-- Lecture 1 notebook: [Square Roots](http://nbviewer.jupyter.org/github/mitmath/18335/blob/spring19/notes/Newton-Square-Roots.ipynb)
+- Lecture 1 notebook: {{% resource_link "bb8c23c1-e445-4efa-bcad-b12d14546cab" "Square Roots" %}}
 
 ### Assignment
 
 - {{% resource_link "6e673088-5b20-bd04-6cbd-e805d15a4835" "Problem set 1 (PDF)" %}}
-- Problem set 1 notebook: [Problem set 1](https://nbviewer.jupyter.org/github/mitmath/18335/blob/spring19/psets/pset1.ipynb)
+- Problem set 1 notebook: {{% resource_link "6ef8b983-dd83-43a6-a965-b1ba2038d987" "Problem set 1" %}}
 - {{% resource_link "e03746c6-51f0-a76f-651d-918a0aa0dd10" "Problem set 1 solutions (PDF)" %}}
-- Problem set 1 solutions notebook: [Problem set 1 solutions](http://nbviewer.jupyter.org/github/mitmath/18335/blob/spring19/psets/pset1sol.ipynb)
+- Problem set 1 solutions notebook: {{% resource_link "ae93a1e3-8c06-4a3e-93c7-f7326af66a89" "Problem set 1 solutions" %}}
 
 ### Further Reading
 
 - [Newton's method](https://en.wikipedia.org/wiki/Newton's_method) from Wikipedia is a reasonable starting point. Googling "Newton's method" can find lots of references.
-- Beware that the terminology for the [rate of convergence](https://en.wikipedia.org/wiki/Rate_of_convergence) (linear, quadratic, etc.) is somewhat different in this context from the terminology for discretization schemes (first-order, second-order, etc.); see e.g. the linked Wikipedia article.
+- Beware that the terminology for the {{% resource_link "8445d0c7-75e6-446f-9c64-d5147b170b47" "rate of convergence" %}} (linear, quadratic, etc.) is somewhat different in this context from the terminology for discretization schemes (first-order, second-order, etc.); see e.g. the linked Wikipedia article.
 
 ## Lecture 2: Floating-Point Arithmetic
 
@@ -40,22 +40,22 @@ In floating-point arithmetic, we store both an integer coefficient and an expone
 
 Went through some simple examples in Julia (see notebook below), illustrating basic syntax and a few interesting tidbits, in particular on the accuracy of summation algorithms, that we will investigate in more detail later.
 
-Overview of floating-point representations, focusing on the IEEE 754 standard (see also handout from previous lecture). The key point is that the nearest floating-point number to *x*, denoted fl(*x*), has the property of *uniform relative precision* (for |*x*| and 1/|*x*| less than some *range*, ≈10308 for double precision) that |fl(*x*)−*x*| ≤ εmachine|*x*|, where εmachine is the relative "machine precision" (about 10−16 for double precision). There are also a few special values: ±Inf (e.g. for [overflow](https://en.wikipedia.org/wiki/Arithmetic_overflow)), [NaN](https://en.wikipedia.org/wiki/NaN), and ±0 (e.g. for [underflow](https://en.wikipedia.org/wiki/Arithmetic_underflow)).
+Overview of floating-point representations, focusing on the IEEE 754 standard (see also handout from previous lecture). The key point is that the nearest floating-point number to *x*, denoted fl(*x*), has the property of *uniform relative precision* (for |*x*| and 1/|*x*| less than some *range*, ≈10308 for double precision) that |fl(*x*)−*x*| ≤ εmachine|*x*|, where εmachine is the relative "machine precision" (about 10−16 for double precision). There are also a few special values: ±Inf (e.g. for {{% resource_link "5823a443-6021-49a8-b568-7c40ca8f9646" "overflow" %}}), {{% resource_link "00d8d69d-2436-4d39-a94d-8381c433af18" "NaN" %}}, and ±0 (e.g. for {{% resource_link "31558313-34e7-477b-8d34-504788e514e4" "underflow" %}}).
 
 - Lecture 2 handout:
-- [Floating-Point Arithmetic](http://nbviewer.jupyter.org/github/mitmath/18335/blob/spring19/notes/Floating-Point-Intro.ipynb)
+- {{% resource_link "76b99473-7db1-4d72-b6e5-58f063c9e78c" "Floating-Point Arithmetic" %}}
 - {{% resource_link "88129903-3165-275f-3b15-ae8b172e6de8" "Some Myths about Floating-Point Arithmetic (PDF)" %}}
 
 ### Further Reading
 
-- [What Every Computer Scientist Should Know About Floating Point Arithmetic](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.22.6768) by David Goldberg.
-- [How Java’s Floating-Point Hurts Everyone Everywhere (PDF)](http://www.cs.berkeley.edu/~wkahan/JAVAhurt.pdf) by William Kahan and Joseph Darcy. This article contains a nice discussion of floating-point myths and misconceptions.
+- {{% resource_link "43936ec1-adc1-45ef-959d-9e5f7eeef8d5" "What Every Computer Scientist Should Know About Floating Point Arithmetic" %}} by David Goldberg.
+- {{% resource_link "fdd9f5c6-fbdf-4290-8c95-8d5aadff5824" "How Java’s Floating-Point Hurts Everyone Everywhere (PDF)" %}} by William Kahan and Joseph Darcy. This article contains a nice discussion of floating-point myths and misconceptions.
 - Read “Lecture 13” in the textbook *Numerical Linear Algebra*.
 
 ## Julia Tutorial
 
-We introduced [the Julia Programming Language](http://julialang.org/) that we will use this term.
+We introduced {{% resource_link "9101ae10-24db-4814-9cdc-8c8b05d41f70" "the Julia Programming Language" %}} that we will use this term.
 
 - {{% resource_link "fb66800c-466e-fd52-4aa5-d76ddf928bf5" "Julia & IJulia Cheat-Sheet (PDF)" %}}
 - {{% resource_link "ff680e9d-d985-7804-f64e-6f3bf523f80e" "Introduction to Julia (PDF)" %}}
-- [Julia for Numerical Computation in MIT Courses](https://github.com/mitmath/julia-mit/blob/master/README.md)
+- {{% resource_link "e6fc46e4-e11c-4bb2-adac-7c554a15d07b" "Julia for Numerical Computation in MIT Courses" %}}

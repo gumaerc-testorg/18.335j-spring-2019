@@ -24,8 +24,8 @@ Noted that n steps of Arnoldi requires Θ(mn²) operations and Θ(mn) storage. I
 ### Further Reading
 
 - Read “Lectures 31–34” in the textbook *Numerical Linear Algebra*.
-- Online book [*Templates for the Solution of Linear Systems: Building Blocks for Iterative Methods*](http://www.netlib.org/linalg/html_templates/Templates.html) by Richard Barrett et al.
-- Online book [*Templates for the Solution of Algebraic Eigenvalue Problems: A Practical Guide*](http://www.cs.utk.edu/~dongarra/etemplates/book.html) by Zhaojun Bai et al.
+- Online book {{% resource_link "24f3fa34-5ecc-429c-b428-29b72ec9bdc8" "*Templates for the Solution of Linear Systems: Building Blocks for Iterative Methods*" %}} by Richard Barrett et al.
+- Online book {{% resource_link "bc3f8310-a0b5-47a0-a38c-256443e98102" "*Templates for the Solution of Algebraic Eigenvalue Problems: A Practical Guide*" %}} by Zhaojun Bai et al.
 
 ## Lecture 19: Arnoldi and Lanczos with Restarting
 
@@ -38,11 +38,11 @@ A solution to the loss of orthogonality in Lanczos and the growing computational
 Explained why restarting properly is nontrivial for k>1: we need to restart in such a way that maintains the Arnoldi (or Lanczos) property AQ{{< sub "n" >}} = Q{{< sub "n" >}}H{{< sub "n" >}} + r{{< sub "n" >}}e{{< sub "n" >}}ᵀ where H{{< sub "n" >}} is upper-Hessenberg, r{{< sub "n" >}} is orthogonal to Q{{< sub "n" >}}, and e{{< sub "n" >}}ᵀ is only nonzero in the last column. In particular, showed that the "obvious" naive restarting algorithm using k Ritz vectors *almost* works, but messes up the e{{< sub "n" >}}ᵀ property. See the handout and notebook below.
 
 - Lecture 19 handout: {{% resource_link "fa98fed4-3acb-3e23-11f6-d9328ca31d04" "Why Restarting Arnoldi/Lanczos is not Trivial (PDF)" %}}
-- Lecture 19 notebook: [Experiments with Arnoldi Iterations](http://nbviewer.jupyter.org/github/mitmath/18335/blob/spring19/notes/Arnoldi.ipynb)
+- Lecture 19 notebook: {{% resource_link "68b69830-6622-46c6-8a14-10f7b1828c7d" "Experiments with Arnoldi Iterations" %}}
 
 ### Further Reading
 
-- See the section on [Implicitly Restarted Lanczos Method](http://www.cs.utk.edu/~dongarra/etemplates/node117.html) in [*Templates for the Solution of Algebraic Eigenvalue Problems: A Practical Guide*](http://www.cs.utk.edu/~dongarra/etemplates/book.html) by Zhaojun Bai et al.
+- See the section on {{% resource_link "270ccbc2-9810-4cfe-ae22-608483f72e9f" "Implicitly Restarted Lanczos Method" %}} in {{% resource_link "bc3f8310-a0b5-47a0-a38c-256443e98102" "*Templates for the Solution of Algebraic Eigenvalue Problems: A Practical Guide*" %}} by Zhaojun Bai et al.
 
 ## Lecture 20: The GMRES Algorithm and Convergence of GMRES and Arnoldi
 
@@ -50,7 +50,7 @@ Explained why restarting properly is nontrivial for k>1: we need to restart in s
 
 Introduced the GMRES algorithm: compute the basis Q{{< sub "n" >}} for 𝒦{{< sub "n" >}} as in Arnoldi, but then minimize the residual ‖Ax-b‖{{< sub "2" >}} for x∈𝒦{{< sub "n" >}} using this basis. This yields a small (n+1)×n least-squares problem involving H{{< sub "n" >}}.
 
-Discussed the convergence rate of GMRES and Arnoldi in terms of polynomial approximations. Following the book closely, showed that the relative errors (the residual norm ‖Ax-νx‖ or ‖Ax-b‖) can be bounded by minimizing the value p(λ) of a polynomial p(z) evaluated at the eigenvalues, where p has degree *n* after the *n*{{< sup "th" >}} iteration. In Arnoldi, the λ{{< sup "n" >}} coefficient of p(λ) is 1, whereas in GMRES the constant coefficient p(0)=1. (There is also a factor of the condition number of the eigenvector matrix in GMRES, so it is favorable for the eigenvectors to be near-orthogonal, i.e. for the matrix to be near-normal, see [normal matrix](http://en.wikipedia.org/wiki/Normal_matrix).)
+Discussed the convergence rate of GMRES and Arnoldi in terms of polynomial approximations. Following the book closely, showed that the relative errors (the residual norm ‖Ax-νx‖ or ‖Ax-b‖) can be bounded by minimizing the value p(λ) of a polynomial p(z) evaluated at the eigenvalues, where p has degree *n* after the *n*{{< sup "th" >}} iteration. In Arnoldi, the λ{{< sup "n" >}} coefficient of p(λ) is 1, whereas in GMRES the constant coefficient p(0)=1. (There is also a factor of the condition number of the eigenvector matrix in GMRES, so it is favorable for the eigenvectors to be near-orthogonal, i.e. for the matrix to be near-normal, see {{% resource_link "3eec7561-2bbc-4316-bbb2-27847db6c7c1" "normal matrix" %}}.)
 
 Using this, we can see that the most favorable situation occurs when the eigenvalues are grouped into a small cluster, or perhaps a few small clusters, since we can then make p(λ) small with a low-degree polynomial that concentrates a few roots in each cluster. This means that Arnoldi/GMRES will achieve small errors in only a few iterations. Moreover we can see that a few outlying eigenvalues aren't a problem, since p(z) will quickly attain roots there and effectively eliminate those eigenvalues from the error—this quantifies the intuition that Krylov methods "improve the condition number" of the matrix as the iteration proceeds, which is why the condition-number bounds on the error are often pessimistic. Conversely, the worst case will be when the eigenvalues are all spread out uniformly in some sense. Following examples 35.1 and 35.2 in the book, you can actually have two matrices with very similar small condition numbers but very different GMRES convergence rates, if in one case the eigenvalues are clustered and in the other case the eigenvalues are spread out in a circle around the origin (i.e. with clustered magnitudes |λ| but different phase angles).
 
@@ -68,5 +68,5 @@ In many practical cases, unfortunately, the eigenvalues of A are *not* mostly 
 ### Further Reading
 
 - Read “Lectures 34, 35, and 40” in the textbook *Numerical Linear Algebra*.
-- The convergence of GMRES for very non-normal matrices is a complicated subject; see e.g. [The Convergence of Krylov Subspace Methods for Large Unsymmetric Linear Systems](http://citeseer.ist.psu.edu/viewdoc/summary?doi=10.1.1.48.1733) by Zhongxiao Jia.
-- [Iterative methods for solving Ax=b, GMRES/FOM versus QMR/BiCG](http://link.springer.com/article/10.1007%2FBF02127693) (by Jane Cullum) reviews the relationship between GMRES and a similar algorithm called FOM that is more Galerkin-like (analogous to Rayleigh-Ritz rather than least-squares).
+- The convergence of GMRES for very non-normal matrices is a complicated subject; see e.g. {{% resource_link "fa19a625-24df-45ad-9c27-ad657facd359" "The Convergence of Krylov Subspace Methods for Large Unsymmetric Linear Systems" %}} by Zhongxiao Jia.
+- {{% resource_link "af24250e-bc39-4a7a-a10e-f3a8c8cc5553" "Iterative methods for solving Ax=b, GMRES/FOM versus QMR/BiCG" %}} (by Jane Cullum) reviews the relationship between GMRES and a similar algorithm called FOM that is more Galerkin-like (analogous to Rayleigh-Ritz rather than least-squares).

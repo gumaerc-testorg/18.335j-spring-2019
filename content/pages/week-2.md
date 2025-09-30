@@ -15,21 +15,21 @@ Analyzed the accumulated floating-point roundoff errors (see handouts below), ex
 
 **Stability:** Gave the obvious definition of accuracy, what we might call "forwards stability" = almost the right answer for the right input. Showed that this is often too strong; e.g. adding a sequence of numbers is not forwards stable. (Basically because the denominator in the relative forwards error, which is the exact sum, can be made arbitrarily small via cancellations.)
 
-Define asymptotic notation O(ε): *f*(ε) is O(*g*(ε)) if there exist some constants C, ε{{< sub "0" >}} > 0 such that |*f*(ε)| \< C|*g*(ε)| for all |ε|\<ε\\(\_0\\). That is, *g*(ε) is an asymptotic *upper bound* for *f*(ε) as ε goes to zero, ignoring constant factors C. (A similar notation is used in computational complexity theory, but in the limit of large arguments *n*.) In the definitions of stability, we technically require [uniform convergence](https://en.wikipedia.org/wiki/Uniform_convergence): we must have O(ε) errors with the same constants C and ε\\(\_0\\) independent of the inputs *x*. (The constants can depend on the dimension of *x*, however.)
+Define asymptotic notation O(ε): *f*(ε) is O(*g*(ε)) if there exist some constants C, ε{{< sub "0" >}} > 0 such that |*f*(ε)| \< C|*g*(ε)| for all |ε|\<ε\\(\_0\\). That is, *g*(ε) is an asymptotic *upper bound* for *f*(ε) as ε goes to zero, ignoring constant factors C. (A similar notation is used in computational complexity theory, but in the limit of large arguments *n*.) In the definitions of stability, we technically require {{% resource_link "14d38daf-f1ff-4c6f-9c1c-244e6b265d85" "uniform convergence" %}}: we must have O(ε) errors with the same constants C and ε\\(\_0\\) independent of the inputs *x*. (The constants can depend on the dimension of *x*, however.)
 
 More generally, we apply a weaker condition: "stability" = almost the right answer for almost the right input.
 
 Often, it is sufficient to prove "backwards stability" = right answer for almost the right input. Showed that, in our example of adding a sequence of numbers, backwards stability seems to work where forwards stability failed. Then more rigorously proved that floating-point summation of *n* numbers is backwards stable.
 
-- Lecture 3 handout 1: ![This resource may not render correctly in a screen reader.](https://old.ocw.mit.edu/images/inacessible.gif)[Notes on the Accuracy of Naive Summation (PDF)](https://old.ocw.mit.edu/courses/mathematics/18-335j-introduction-to-numerical-methods-spring-2019/week-2/MIT18_335JS19_lec3-1.pdf)
-- Lecture 3 handout 2: ![This resource may not render correctly in a screen reader.](https://old.ocw.mit.edu/images/inacessible.gif)[Backwards Stability of Recursive Summation (PDF)](https://old.ocw.mit.edu/courses/mathematics/18-335j-introduction-to-numerical-methods-spring-2019/week-2/MIT18_335JS19_lec3-2.pdf)
+- Lecture 3 handout 1: ![This resource may not render correctly in a screen reader.](https://old.ocw.mit.edu/images/inacessible.gif){{% resource_link "d2c6d0ea-f9c3-460d-895a-68aa9525b1da" "Notes on the Accuracy of Naive Summation (PDF)" %}}
+- Lecture 3 handout 2: ![This resource may not render correctly in a screen reader.](https://old.ocw.mit.edu/images/inacessible.gif){{% resource_link "1a6d44c2-7872-45a5-aa3c-7a4fab42c588" "Backwards Stability of Recursive Summation (PDF)" %}}
 
 ### Further Reading
 
-- [What Every Computer Scientist Should Know About Floating Point Arithmetic](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.22.6768) by David Goldberg.
-- [How Java’s Floating-Point Hurts Everyone Everywhere (PDF)](http://www.cs.berkeley.edu/~wkahan/JAVAhurt.pdf) by William Kahan and Joseph Darcy. This article contains a nice discussion of floating-point myths and misconceptions.
+- {{% resource_link "43936ec1-adc1-45ef-959d-9e5f7eeef8d5" "What Every Computer Scientist Should Know About Floating Point Arithmetic" %}} by David Goldberg.
+- {{% resource_link "fdd9f5c6-fbdf-4290-8c95-8d5aadff5824" "How Java’s Floating-Point Hurts Everyone Everywhere (PDF)" %}} by William Kahan and Joseph Darcy. This article contains a nice discussion of floating-point myths and misconceptions.
 - Read “Lectures 3 and 13–15” in the textbook *Numerical Linear Algebra*.
-- Wikipedia article on "[Big O Notation](https://en.wikipedia.org/wiki/Big_O_notation)"; note that for expressions like O(ε) we are looking in the limit of small arguments rather than of large arguments (as in complexity theory), but otherwise the ideas are the same.
+- Wikipedia article on "{{% resource_link "093be9f8-31df-47c8-a76e-8ff93cfd5574" "Big O Notation" %}}"; note that for expressions like O(ε) we are looking in the limit of small arguments rather than of large arguments (as in complexity theory), but otherwise the ideas are the same.
 
 ## Lecture 4: Norms on Vector Spaces
 
@@ -39,13 +39,13 @@ When quantifying errors, a central concept is a norm, and we saw in our proof of
 
 - Positive definite: ‖*v*‖ ≥ 0, and = 0 if and only if *v* = 0
 - Scaling: ‖α*v*‖ = |α|⋅‖*v*‖ for any scalar α.
-- [Triangle inequality](https://en.wikipedia.org/wiki/Triangle_inequality): ‖*v*+*w*‖ ≤ ‖*v*‖ + ‖*w*‖
+- {{% resource_link "cdedce16-2397-4f86-8074-18c76ca52dbd" "Triangle inequality" %}}: ‖*v*+*w*‖ ≤ ‖*v*‖ + ‖*w*‖
 
-There are many norms, for many different vector spaces. Gave examples of norms of column vectors: L\\(\_p\\) norms (usually \\(p\\) = 1, 2, or \\(\\infty\\)) and weighted L\\(\_2\\) norms. A complete (= continuous, essentially) normed vector space is called a [Banach space](https://en.wikipedia.org/wiki/Banach_space), and these error concepts generalize to *f*(*x*) when *f* and *x* are in any Banach spaces (including scalars, column vectors, matrices, …though infinite-dimensional Banach spaces are trickier).
+There are many norms, for many different vector spaces. Gave examples of norms of column vectors: L\\(\_p\\) norms (usually \\(p\\) = 1, 2, or \\(\\infty\\)) and weighted L\\(\_2\\) norms. A complete (= continuous, essentially) normed vector space is called a {{% resource_link "f297347a-6604-402c-81ff-c1aaaa166d99" "Banach space" %}}, and these error concepts generalize to *f*(*x*) when *f* and *x* are in any Banach spaces (including scalars, column vectors, matrices, …though infinite-dimensional Banach spaces are trickier).
 
 Especially important in numerical analysis are functions where the inputs and/or outputs are matrices, and for these cases we need matrix norms. The most important matrix norms are those that are related to matrix operations. Started with the Frobenius norm. Related the Frobenius norm ‖*A*‖*F* to the square root of the sum of eigenvalues of *A*\**A*, which are called the *singular values* σ{{< sup "2" >}}; we will do much more on singular values later, but for now noted that they equal the squared eigenvalues of *A* if *A*\*=*A* (Hermitian). Also defined the induced matrix norm, and bounded it below by the maximum eigenvalue magnitude of *A* (if *A* is square). For the L{{< sub "2" >}} induced norm, related it (without proof for now) to the maximum singular value. A useful property of the induced norm is ‖*AB*‖ ≤ ‖*A*‖⋅‖*B*‖. Multiplication by a unitary matrix *Q* (*Q*\* = *Q*{{< sup "\-1" >}}) preserves both the Frobenius and L{{< sub "2" >}} induced norms.
 
-**Equivalence of norms:** Described fact that any two norms are equivalent up to a constant bound, and showed that this means that stability in one norm implies stability in all norms. Sketched proof (*only skimmed this*): (i) show we can reduce the problem to proving any norm is equivalent to e.g. L{{< sub "1" >}} on (ii) the unit circle; (iii) show any norm is continuous; and (ii) use a result from real analysis: a continuous function on a closed/bounded (compact) set achieves its maximum and minimum, the [extreme value theorem](http://en.wikipedia.org/wiki/Extreme_value_theorem). See handout below.
+**Equivalence of norms:** Described fact that any two norms are equivalent up to a constant bound, and showed that this means that stability in one norm implies stability in all norms. Sketched proof (*only skimmed this*): (i) show we can reduce the problem to proving any norm is equivalent to e.g. L{{< sub "1" >}} on (ii) the unit circle; (iii) show any norm is continuous; and (ii) use a result from real analysis: a continuous function on a closed/bounded (compact) set achieves its maximum and minimum, the {{% resource_link "3ccc3b79-90b1-4560-bb76-6daae6ee241c" "extreme value theorem" %}}. See handout below.
 
 - Lecture 4 handout: {{% resource_link "bcea0470-68e4-6ab8-7f39-8bdd4209c7f5" "Notes on the Equivalence of Norms (PDF)" %}}
 
@@ -77,4 +77,4 @@ Understanding norms and condition numbers of matrices therefore reduces to under
 
 - Read “Lectures 12, 14, 15, and 24” in the textbook *Numerical Linear Algebra*.
 - Any linear-algebra textbook for a review of eigenvalue problems, especially Hermitian/real-symmetric ones.
-- [Errors, Norms, and Condition Numbers](https://nbviewer.jupyter.org/github/stevengj/1806/blob/fall18/lectures/Conditioning.ipynb)
+- {{% resource_link "fb8cc21d-16e5-45a1-b613-11e8daf76d42" "Errors, Norms, and Condition Numbers" %}}
