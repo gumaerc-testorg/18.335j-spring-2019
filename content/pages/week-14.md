@@ -12,9 +12,9 @@ Lecture 38: The Discrete Fourier Transform (DFT) and FFT Algorithms
 
 ### Summary
 
-Introduced the [discrete Fourier transform (DFT)](https://en.wikipedia.org/wiki/Discrete_Fourier_transform). Talked about its history (Gauss!), properties (unitarity, convolution theorem), aliasing, special case of the type-1 [discrete cosine transform (DCT)](https://en.wikipedia.org/wiki/Discrete_cosine_transform), and applications (Chebyshev and other spectral methods for integration, PDEs, etcetera; signal processing, [Schönhage-Strassen algorithm](https://en.wikipedia.org/wiki/Sch%C3%B6nhage%E2%80%93Strassen_algorithm)), etc.
+Introduced the {{% resource_link "9fd65811-b6a2-460d-a418-330475235c31" "discrete Fourier transform (DFT)" %}}. Talked about its history (Gauss!), properties (unitarity, convolution theorem), aliasing, special case of the type-1 {{% resource_link "b1fddeff-9314-4bfb-90e2-23b599aa0eed" "discrete cosine transform (DCT)" %}}, and applications (Chebyshev and other spectral methods for integration, PDEs, etcetera; signal processing, {{% resource_link "8e02e480-e5c0-46df-a951-0fb59ad455f7" "Schönhage-Strassen algorithm" %}}), etc.
 
-A [fast Fourier transform (FFT)](https://en.wikipedia.org/wiki/Fast_Fourier_transform) is an O(_N_ log _N_) algorithm to compute the discrete Fourier transform. There are many such algorithms, the most famous of which is the Cooley-Tukey algorithm (1965, though there were many precursors dating back to Gauss himself).
+A {{% resource_link "262aa24f-1723-49d2-adac-c0976dd9671f" "fast Fourier transform (FFT)" %}} is an O(_N_ log _N_) algorithm to compute the discrete Fourier transform. There are many such algorithms, the most famous of which is the Cooley-Tukey algorithm (1965, though there were many precursors dating back to Gauss himself).
 
 *   Lecture 38 handout: {{% resource_link edf5b798-bef2-f1cf-e687-a6bfcd32a03a "Fast Fourier Transform Algorithms (PDF)" %}}
 
